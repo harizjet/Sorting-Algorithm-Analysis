@@ -4,6 +4,9 @@ import os
 for d in range(1000, 50001):
 	arr = np.random.choice(range(d), d, replace=False)
 	file_n = '{}.txt'.format(d)
+
+	if not os.path.isdir('data'):
+		os.mkdir(os.path.join(os.getcwd(), 'data'))
 	if len(os.listdir('data/')) > 1:
 		print("Data already exists")
 		break

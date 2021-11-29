@@ -1,0 +1,10 @@
+TTTA6434_HarizIzzat_Ass2.docx
+result/js_t.txt
+result/py_t.txt
+instruction.txt
+exploring.ipynb
+visualization.pptx
+.*
+!/.gitignore
+[~][$]*
+data
