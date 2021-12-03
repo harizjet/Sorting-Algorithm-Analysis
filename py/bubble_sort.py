@@ -19,10 +19,13 @@ if __name__ == "__main__":
 
 	_start = time.time()
 	# algo start
+	found = False
 	for i in range(array_n-1, -1, -1):
 		for il in range(0, i):
 			if array[il] > array[il+1]:
 				array[il], array[il+1] = array[il+1], array[il]
+				found = True
+			if not found: break
 	_end = time.time()
 
 	with open(f"./result/py.txt", "a") as f:
